@@ -21,7 +21,6 @@ export const  Main = () => {
         setList((prev) => list = {
             text: [...prev.text, obj]
         });
-        console.log(list);
         resetInput();
     }
 
@@ -29,7 +28,6 @@ export const  Main = () => {
         list.text.map((el) => {
             if (el.id === id) {
                 el.check = !el.check;
-                console.log(el);
                 return el;
             }
             return el;
@@ -38,13 +36,11 @@ export const  Main = () => {
     }
 
     const deleteItem = (id) => {
-        console.log(true);
         setList(() => list = {
             text: list.text.filter((el) => {
                 return el.id !== id;
             })
         });
-        console.log(list);
     }
     return (
         <div className='wrapper'>
