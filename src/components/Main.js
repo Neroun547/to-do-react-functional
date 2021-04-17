@@ -58,7 +58,7 @@ export const  Main = () => {
             </form>
             <div className="wrapper-list">
                 <div className="check-item" >
-                    <h2>Check item</h2>
+                    <h2>Check items</h2>
                     <ul>
                         {
                         list.text.map((el) => {
@@ -75,7 +75,7 @@ export const  Main = () => {
                     </ul>
                 </div>
                 <div className="nocheck-item">
-                <h2>Check item</h2>
+                <h2>Items</h2>
                 <ul>
                     {
                         list.text.map((el) => {
